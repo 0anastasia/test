@@ -94,7 +94,7 @@
  
    /* section 2 */
   .second-section {
-    font-family: "open-sans-regular"sans-serif;
+    font-family: "open-sans-regular", sans-serif;
     margin-left: 20px;
     text-align: center;
     
