@@ -105,7 +105,7 @@
     justify-content: center;
     background-color: #ECECEC;
     border-radius: 20%;
-    align-items: stretch;
+    margin-bottom: 5px;
     max-width: 300px;
     min-height: 250px;
   }
