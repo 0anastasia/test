@@ -1,0 +1,19 @@
+const countdown1 = document.querySelector('.countdown1');
+const targetDate1 = new Date('2024-08-01T00:00:00');
+ 
+function updateCountdown() {
+  const now1 = new Date();
+  const remainingTime1 = targetDate1 - now1;
+ 
+  const days = Math.floor(remainingTime1 / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((remainingTime1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((remainingTime1 % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((remainingTime1 % (1000 * 60)) / 1000);
+ 
+  document.getElementById('days1').innerText = days.toString().padStart(2, '0');
+  document.getElementById('hours1').innerText = hours.toString().padStart(2, '0');
+  document.getElementById('minutes1').innerText = minutes.toString().padStart(2, '0');
+  document.getElementById('seconds1').innerText = seconds.toString().padStart(2, '0');
+}
+ 
+setInterval(updateCountdown, 1000);
